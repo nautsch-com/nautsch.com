@@ -1,0 +1,3 @@
+[submodule "public"]
+	path = public
+	url = git@github.com:nautsch-com/nautsch-com.github.io.git

@@ -33,6 +33,6 @@ git commit -m "$msg"
 
 # Push source and build repos.
 
-git push -f https://$GIT_TOKEN@github.com/nautsch-com/nautsch-com.github.io.git master:master
+git push -q -f https://$GIT_TOKEN@github.com/nautsch-com/nautsch-com.github.io.git master:master
 
 echo "... finished."

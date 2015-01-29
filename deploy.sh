@@ -24,7 +24,6 @@ git config user.name "wercker"
 
 git add -A
 
-# Commit changes.
 msg="rebuilding site `date`"
 if [ $# -eq 1 ]
   then msg="$1"

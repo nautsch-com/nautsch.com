@@ -2,8 +2,7 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
-# set -e
-
+set -e
 
 if [ -z $GIT_TOKEN ]
     then
@@ -11,21 +10,18 @@ if [ -z $GIT_TOKEN ]
         exit 1
 fi
 
-exit 0
-
-
-# Build the project.
-# hugo # if using a theme, replace by `hugo -t <yourtheme>`
-
-# Go To Public folder
 cd public
-# Add changes to git.
+
 
 if [ -d ".git" ]; then
   rm -rf .git
 fi
 
 git init
+
+git config user.email "pleasemailus@wercker.com"
+git config user.name "wercker"
+
 git add -A
 
 # Commit changes.

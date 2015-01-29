@@ -3,10 +3,10 @@ build:
   steps:
     - arjen/hugo-build:
         version: 0.12
-deploy:
-  steps:
-    - hijonathan/gh-pages@0.2.3:
-        token: $GIT_TOKEN
-        domain: www.nautsch.com
-        basedir: public
-        repo: nautsch-com/nautsch-com.github.io.git
+
+deploy :
+  steps :
+    - script:
+        name: Deploy to github pages
+        code: |-
+          ./deploy.sh

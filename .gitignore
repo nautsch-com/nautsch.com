@@ -1,3 +1,6 @@
 # IDE
 .idea
 *.impl
+
+# target directory
+public

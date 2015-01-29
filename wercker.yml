@@ -5,7 +5,7 @@ build:
         version: 0.12
 deploy:
   steps:
-    - lukevivier/gh-pages@0.2.1:
+    - hijonathan/gh-pages@0.2.3:
         token: $GIT_TOKEN
         domain: www.nautsch.com
         basedir: public

@@ -5,4 +5,7 @@
 # target directory
 public
 
-devdeploy.sh
+# wercker
+_builds/
+_projects/
+_steps/

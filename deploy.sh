@@ -19,8 +19,8 @@ fi
 
 git init
 
-git config user.email "pleasemailus@wercker.com"
-git config user.name "wercker"
+git config user.email "oliver.nautsch@nautsch.com"
+git config user.name "ollin"
 
 git add -A
 
